@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import IntroVideo from './components/IntroVideo/IntroVideo.jsx';
-import Home from './pages/Home/Home';
-import { AuthProvider } from './context/authContext'
+import Home from './pages/Home/Home.jsx';
+import { AuthProvider } from './context/authContext.js';
 import { MediaTypeProvider } from './context/mediaTypeProvider.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ProtectedRoute } from './components/ProtectedRuote/ProtectedRoute'
-import LoginRegistro from './pages/LoginRegistro/LoginRegistro.jsx'
-import Recientes from './pages/Recientes/Recientes.jsx'
-import Categorias from './pages/Categorias/Categorias.jsx'
-import Generos from './pages/Generos/Generos.jsx'
-import MiLista from './pages/MiLista/MiLista.jsx'
-import Lanzamientos from './pages/Lanzamientos/Lanzamientos.jsx'
-import About from './pages/About/About.jsx'
+import { ProtectedRoute } from './components/ProtectedRuote/ProtectedRoute';
+import LoginRegistro from './pages/LoginRegistro/LoginRegistro.jsx';
+import Recientes from './pages/Recientes/Recientes.jsx';
+import Categorias from './pages/Categorias/Categorias.jsx';
+import Generos from './pages/Generos/Generos.jsx';
+import MiLista from './pages/MiLista/MiLista.jsx';
+import Lanzamientos from './pages/Lanzamientos/Lanzamientos.jsx';
+import About from './pages/About/About.jsx';
 // import VideoPlayer from './components/IntroVideo/VideoPlayer.jsx'
 import './App.css';
 
 function App() {
-  const [showVideo, setShowVideo] = useState(false); //pasar a true una vez que se terminen las pruebas
+  const [showVideo, setShowVideo] = useState(true); //pasar a true una vez que se terminen las pruebas
   // estado ancho de ventana (renderizado responsive)
   const [anchoVentana, setAnchoVentana] = useState(window.innerWidth);
 

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './LayoutForm.css';
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/navbar/Navbar';
 import Boton from '../../components/Boton';
+import './LayoutForm.css';
 
 const LayoutForm = ({children}) => {
     const navigate = useNavigate();
@@ -20,4 +20,6 @@ const LayoutForm = ({children}) => {
     )
 }
 
-export default LayoutForm
+export default LayoutForm;
+
+

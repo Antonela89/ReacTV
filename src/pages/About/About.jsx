@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { useState, useEffect } from 'react';
-import LayoutSecundario from '../../layout/LayoutSecundario/LayoutSecundario'
+import LayoutSecundario from '../../layout/LayoutSecundario/LayoutSecundario';
 import Integrante from  '../../components/Integrante/Integrante';
-import Contact from '../../components/Contact/Contact'
+import Contact from '../../components/contact/Contact';
 import {getFirestore, collection, getDocs} from 'firebase/firestore';
-import './About.css'
+import './About.css';
 
 const About = () => {
 

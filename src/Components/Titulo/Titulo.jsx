@@ -1,5 +1,5 @@
-import React from 'react'
-import './Titulo.css'
+import React from 'react';
+import './Titulo.css';
 
 const Titulo = ({texto}) => {
     return (
@@ -9,4 +9,4 @@ const Titulo = ({texto}) => {
     )
 }
 
-export default Titulo
+export default Titulo;

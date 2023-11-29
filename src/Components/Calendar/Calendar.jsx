@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React, { useState, useRef, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import html2canvas from 'html2canvas';
@@ -91,11 +91,7 @@ const WritableCalendar = ({ onInfoChange }) => {
         const canvas = await html2canvas(document.documentElement, {
           scale: 2,
           allowTaint: true,
-<<<<<<< HEAD
           useCORS: false,
-=======
-          useCORS: false,  // o puedes probar con useCORS: false
->>>>>>> de2404a (Cambios)
         });
 
         const imageDataUrl = canvas.toDataURL('image/jpeg', 1.0);
@@ -184,5 +180,4 @@ const WritableCalendar = ({ onInfoChange }) => {
 };
 
 export default WritableCalendar;
-=======
->>>>>>> c8be1f837c746fb834e4318de00cf759cadc6234
+

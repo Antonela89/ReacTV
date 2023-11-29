@@ -1,13 +1,9 @@
 :root {
     --color-azul: #003686;
     --color-naranja: #E08400;
-<<<<<<< HEAD
 }
 
 * {
     font-family: "Roboto Slab", serif;
     box-sizing: border-box;
-=======
-    --color-negro: black;
->>>>>>> 010b642a593beb5a6c45ec61c92a709ed537ff18
 }

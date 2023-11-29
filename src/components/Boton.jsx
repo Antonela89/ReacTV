@@ -40,4 +40,4 @@ const Boton = ({Contenido, texto, funcion, color, colorHover, fontSize, width, h
     )} 
 }
 
-export default Boton
+export default Boton;

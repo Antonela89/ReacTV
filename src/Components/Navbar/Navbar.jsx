@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography} from '@mui/material';
 import { Link, useNavigate  } from 'react-router-dom';
-import Boton from '../Boton'
+import Boton from '../Boton';
 import Busqueda from '../Busqueda/Busqueda'
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import NoAccountsIcon from '@mui/icons-material/NoAccounts';

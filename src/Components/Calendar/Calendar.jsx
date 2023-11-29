@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useRef, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import html2canvas from 'html2canvas';
@@ -183,3 +184,5 @@ const WritableCalendar = ({ onInfoChange }) => {
 };
 
 export default WritableCalendar;
+=======
+>>>>>>> c8be1f837c746fb834e4318de00cf759cadc6234

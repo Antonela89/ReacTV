@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import { useState, useEffect } from 'react';
 import LayoutSecundario  from '../../layout/LayoutSecundario/LayoutSecundario'
 import Titulo from '../../components/Titulo/Titulo'
 import Integrante from  '../../components/Integrante/Integrante';
-import Contact from '../../components/Contact/Contact'
+import Contact from '../../components/contact/Contact';
 import {getFirestore, collection, getDocs} from 'firebase/firestore';
 import Loader from "../../components/Loader/Loader";
-import './About.css'
+import './About.css';
 
 const About = () => {
   const [isLoading, setIsLoading] = useState(true);

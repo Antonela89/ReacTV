@@ -90,7 +90,11 @@ const WritableCalendar = ({ onInfoChange }) => {
         const canvas = await html2canvas(document.documentElement, {
           scale: 2,
           allowTaint: true,
+<<<<<<< HEAD
           useCORS: false,
+=======
+          useCORS: false,  // o puedes probar con useCORS: false
+>>>>>>> de2404a (Cambios)
         });
 
         const imageDataUrl = canvas.toDataURL('image/jpeg', 1.0);

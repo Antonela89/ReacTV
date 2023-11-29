@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Boton from '../../components/Boton';
 import './LayoutSecundario.css';
-import Navbar from '../../components/Navbar/Navbar'
+import Navbar from '../../components/navbar/Navbar';
 
 const LayoutSecundario = ({children, textoBoton}) => {
   const navigate = useNavigate();

@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import IntroVideo from './components/IntroVideo/IntroVideo.jsx';
 import Home from './pages/Home/Home';
-import { AuthProvider } from './context/authContext'
+import { AuthProvider } from './context/authContext';
 import { MediaTypeProvider } from './context/mediaTypeProvider.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+<<<<<<< HEAD
 import { ProtectedRoute } from './components/ProtectedRuote/ProtectedRoute'
 import LoginRegistro from './pages/LoginRegistro/LoginRegistro.jsx'
 import Recientes from './pages/Recientes/Recientes.jsx'
@@ -15,6 +16,17 @@ import Lanzamientos from './pages/Lanzamientos/Lanzamientos.jsx'
 import About from './pages/About/About.jsx'
 import Search from './pages/Search/Search.jsx'
 import CardSinopsis from './pages/Card/CardSinopsis.jsx'
+=======
+import { ProtectedRoute } from './components/ProtectedRuote/ProtectedRoute';
+import LoginRegistro from './pages/LoginRegistro/LoginRegistro.jsx';
+import Recientes from './pages/Recientes/Recientes.jsx';
+import Categorias from './pages/Categorias/Categorias.jsx';
+import Generos from './pages/Generos/Generos.jsx';
+import MiLista from './pages/MiLista/MiLista.jsx';
+import Lanzamientos from './pages/Lanzamientos/Lanzamientos.jsx';
+import About from './pages/About/About.jsx';
+import Search from './pages/Search/Search.jsx';
+>>>>>>> 010b642a593beb5a6c45ec61c92a709ed537ff18
 import './App.css';
 
 function App() {

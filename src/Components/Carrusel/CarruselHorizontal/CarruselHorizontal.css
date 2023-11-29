@@ -6,7 +6,7 @@
     padding: 1rem;
     margin: 1rem 0;
     position: relative;
-    background: #E08400;
+    background: #0c0c0c;
 }
 
 section .contenedor-principal .flecha-izquierda,
@@ -70,7 +70,7 @@ section .contenedor-carrusel-titulo {
     width: 100%;
     padding: 1rem 0;
     position: relative;
-    background: #E08400;
+    background: #0e0d0d;
 }
 
 section .contenedor-carrusel-titulo .contenedor-principal {

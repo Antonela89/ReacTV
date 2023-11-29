@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import emailjs from "emailjs-com" 
 
 import Titulo from '../Titulo/Titulo'
 import BotonForm from '../Boton/BotonForm/BotonForm'
+=======
+import emailjs from "emailjs-com"; 
+import "./contact.css";
+import Titulo from '../Titulo/Titulo';
+import BotonForm from '../Boton/BotonForm/BotonForm';
+>>>>>>> 010b642a593beb5a6c45ec61c92a709ed537ff18
 import { useState } from "react";
 import "./contact.css";
 

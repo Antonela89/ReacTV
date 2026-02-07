@@ -4,25 +4,25 @@ ReacTV es una aplicación web inspirada en servicios de streaming como Netflix, 
 
 ## 🌟 Características Principales
 
-- [cite_start]**Autenticación Completa:** Gestión de usuarios mediante **Firebase Auth**, incluyendo registro tradicional y login con **Google**.
-- [cite_start]**Catálogo Dinámico:** Integración con la **API de TMDB** para mostrar películas populares, series, lanzamientos y búsqueda de contenido[cite: 334, 335].
-- [cite_start]**Experiencia Personalizada:** Sección de "Mi Lista" para guardar favoritos y carruseles basados en contenido reciente[cite: 361].
-- [cite_start]**Multimedia:** Reproducción de trailers mediante `react-player` y `react-youtube`[cite: 380, 381].
-- [cite_start]**UI/UX Profesional:** Diseño basado en la fuente Roboto, con un esquema de colores azul/naranja para transmitir confianza y energía[cite: 249, 256].
+- **Autenticación Completa:** Gestión de usuarios mediante **Firebase Auth**, incluyendo registro tradicional y login con **Google**.
+- **Catálogo Dinámico:** Integración con la **API de TMDB** para mostrar películas populares, series, lanzamientos y búsqueda de contenido.
+- **Experiencia Personalizada:** Sección de "Mi Lista" para guardar favoritos y carruseles basados en contenido reciente.
+- **Multimedia:** Reproducción de trailers mediante `react-player` y `react-youtube`.
+- **UI/UX Profesional:** Diseño basado en la fuente Roboto, con un esquema de colores azul/naranja para transmitir confianza.
 
 ## 🛠️ Tecnologías y Herramientas
 
-- [cite_start]**Frontend:** React.js, React Router Dom[cite: 241, 381].
-- [cite_start]**Estilos:** Material-UI (MUI), Emotion, Bootstrap y React-Bootstrap[cite: 367, 371, 377].
-- [cite_start]**Backend/Base de Datos:** Firebase (Autenticación y Firestore)[cite: 353, 373].
-- [cite_start]**Consumo de APIs:** Axios[cite: 370].
-- [cite_start]**Diseño:** Prototipado en Figma[cite: 290].
+- **Frontend:** React.js, React Router Dom.
+- **Estilos:** Material-UI (MUI), Emotion, Bootstrap y React-Bootstrap.
+- **Backend/Base de Datos:** Firebase (Autenticación y Firestore).
+- **Consumo de APIs:** Axios.
+- **Diseño:** Prototipado en Figma.
 
 ## 📈 Desafíos Técnicos Superados
 
 Durante el desarrollo, el equipo enfrentó y resolvió retos técnicos significativos, documentados detalladamente:
-- [cite_start]**Gestión de Versiones:** Resolución de conflictos en Pull Requests mediante `git revert`[cite: 385].
-- [cite_start]**Case Sensitivity en File Systems:** Solución de inconsistencias en el nombrado de carpetas entre diferentes entornos de desarrollo mediante forks y reestructuración en GitHub[cite: 386, 389, 392].
+- **Gestión de Versiones:** Resolución de conflictos en Pull Requests mediante `git revert`.
+- **Case Sensitivity en File Systems:** Solución de inconsistencias en el nombrado de carpetas entre diferentes entornos de desarrollo mediante forks y reestructuración en GitHub.
 
 ## 🚀 Instalación y Uso
 

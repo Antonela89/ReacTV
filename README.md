@@ -24,7 +24,10 @@ Durante el desarrollo, el equipo enfrentó y resolvió retos técnicos significa
 - **Gestión de Versiones:** Resolución de conflictos en Pull Requests mediante `git revert`.
 - **Case Sensitivity en File Systems:** Solución de inconsistencias en el nombrado de carpetas entre diferentes entornos de desarrollo mediante forks y reestructuración en GitHub.
 
-Ver documentación adjunta: ![pdf]('DOCUMENTACION_REACTV-2.pdf')
+## 📄 Documentación del Proyecto
+Puedes consultar el informe detallado del desarrollo, diseño y desafíos técnicos en el siguiente enlace:
+
+[Descargar Documentación PDF](./DOCUMENTACION_REACTV-2.pdf)
 
 ## 🚀 Instalación y Uso
 

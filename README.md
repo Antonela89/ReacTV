@@ -27,7 +27,7 @@ Durante el desarrollo, el equipo enfrentó y resolvió retos técnicos significa
 ## 📄 Documentación del Proyecto
 Puedes consultar el informe detallado del desarrollo, diseño y desafíos técnicos en el siguiente enlace:
 
-[Descargar Documentación PDF](./DOCUMENTACION_REACTV-2.pdf)
+[Descargar Documentación PDF](./DOCUMENTACION%20REACTV-2.pdf)
 
 ## 🚀 Instalación y Uso
 

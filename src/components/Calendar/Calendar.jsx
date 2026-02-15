@@ -25,6 +25,7 @@ const WritableCalendar = ({ onInfoChange }) => {
 
   useEffect(() => {
     getUpcomingMoviesData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getUpcomingMoviesData = async () => {

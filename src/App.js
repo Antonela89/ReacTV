@@ -46,6 +46,7 @@ function App() {
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []); // El array vacío asegura que el efecto se ejecute solo una vez al montar el componente
 
 	// función manejo de video

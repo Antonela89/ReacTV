@@ -25,6 +25,7 @@ const About = () => {
         console.error('Error fetching data:', error);
         setIsLoading(false);
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

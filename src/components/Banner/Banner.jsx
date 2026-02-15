@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getMovieById, getPopularMovies, getTrailersById } from "../../services/tmdbService";
 import YouTube from "react-youtube";
 import CarruselHorizontal from "../Carrusel/CarruselHorizontal/CarruselHorizontal";

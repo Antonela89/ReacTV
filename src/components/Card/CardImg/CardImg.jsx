@@ -1,4 +1,3 @@
-import React from 'react'
 import './CardImg.css'
 
 const CardImg = ({peli, height = 600, width = 400, funcion}) => {

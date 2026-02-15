@@ -1,4 +1,3 @@
-import React from 'react'
 import colors from '../../config/config.js'
 
 const Checkbox = ({texto, onChange, checked, value, name }) => {

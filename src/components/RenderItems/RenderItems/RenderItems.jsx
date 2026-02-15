@@ -1,4 +1,3 @@
-import React from 'react';
 import Boton from '../../Boton/Boton';
 import Titulo from '../../Titulo/Titulo';
 import CardImg from '../../Card/CardImg/CardImg'

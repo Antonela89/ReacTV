@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate  } from 'react-router-dom';
 import { FaFigma } from 'react-icons/fa'; // Importa los íconos necesarios
 import GitHubIcon from '@mui/icons-material/GitHub';

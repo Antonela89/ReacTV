@@ -1,4 +1,3 @@
-import React from 'react'
 import LayoutSecundario from '../../layout/LayoutSecundario/LayoutSecundario'
 import MoviesContainer from '../../components/Busqueda/MoviesContainer'
 

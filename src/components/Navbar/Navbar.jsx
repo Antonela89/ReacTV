@@ -1,4 +1,3 @@
-import React from 'react';
 import { AppBar, Toolbar, Typography} from '@mui/material';
 import { Link, useNavigate} from 'react-router-dom';
 import Boton from '../Boton/Boton'

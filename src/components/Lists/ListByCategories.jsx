@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ListRow from "./ListRow";
 // import MediaSelector from "../MediaSelector/MediaSelector";
 import Titulo from '../Titulo/Titulo'

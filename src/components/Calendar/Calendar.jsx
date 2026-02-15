@@ -1,9 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import html2canvas from 'html2canvas';
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-//import Alert from '../Alert/Alert'
-//import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import CardImg from '../Card/CardImg/CardImg';
 import Boton from '../Boton/Boton';

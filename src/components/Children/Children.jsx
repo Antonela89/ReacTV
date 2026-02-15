@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { collection, getDocs } from '@firebase/firestore';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { db } from "../../firebase/Firebase.js";

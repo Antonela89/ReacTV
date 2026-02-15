@@ -1,4 +1,3 @@
-import React from 'react';
 import NotFound from '../../components/Error404/NotFound';
 import LayoutMain from '../../layout/LayoutMain/LayoutMain'
 

@@ -1,4 +1,3 @@
-import React from "react";
 import LayoutSecundario from "../../layout/LayoutSecundario/LayoutSecundario";
 import FilterByGenres from "../../components/Filter/FilterByGenres";
 

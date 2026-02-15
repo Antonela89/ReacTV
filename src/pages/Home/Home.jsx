@@ -1,4 +1,3 @@
-import React from 'react';
 import LayoutMain from '../../layout/LayoutMain/LayoutMain'
 import {HomeDeskoptComponents} from './HomeDeskopt/HomeDeskopt';
 import HomeMobile  from './HomeMobile/HomeMobile';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import 'video.js/dist/video-js.css';
 import videojs from 'video.js';
 import './IntroVideo.css';

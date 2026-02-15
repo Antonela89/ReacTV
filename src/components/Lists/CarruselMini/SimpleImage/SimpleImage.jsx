@@ -1,4 +1,3 @@
-// SimpleImage.jsx
 import "./SimpleImage.css";
 
 const SimpleImage = ({ title, path, onClick }) => {

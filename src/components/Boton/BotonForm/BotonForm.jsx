@@ -1,4 +1,3 @@
-import React from 'react';
 import './BotonForm.css';
 
 const BotonForm = ({texto,width, onClick}) => {

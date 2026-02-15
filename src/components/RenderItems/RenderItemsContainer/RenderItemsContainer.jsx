@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Children from '../../Children/Children';
 import RenderItems from '../RenderItems/RenderItems';
 import { getMovieById, getTVById } from "../../../services/tmdbService.js";
 import { collection, getDocs } from '@firebase/firestore';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { db } from '../../../firebase/Firebase.js';
-import { deleteDoc, doc } from 'firebase/firestore';
+import { deleteDoc} from 'firebase/firestore';
 import { useNavigate  } from 'react-router-dom';
 import Loader from '../../Loader/Loader';
 import Swal from "sweetalert2";

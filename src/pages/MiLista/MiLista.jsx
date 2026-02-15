@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import LayoutSecundario from '../../layout/LayoutSecundario/LayoutSecundario';
 import RenderItemsContainer from '../../components/RenderItems/RenderItemsContainer/RenderItemsContainer'
 import { useAuth } from '../../context/authContext.js';

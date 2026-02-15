@@ -1,4 +1,3 @@
-import React from 'react';
 import 'video.js/dist/video-js.css';
 import './NotFound.css';
 

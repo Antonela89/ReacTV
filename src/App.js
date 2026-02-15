@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import IntroVideo from './components/IntroVideo/IntroVideo.jsx';
 import Home from './pages/Home/Home';

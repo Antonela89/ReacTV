@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react';
 import LayoutForm from '../../layout/LayoutForm/LayoutForm'
 import Titulo from '../../components/Titulo/Titulo'

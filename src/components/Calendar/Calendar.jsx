@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import html2canvas from 'html2canvas';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import CardImg from '../Card/CardImg/CardImg';
 import Boton from '../Boton/Boton';
 import Swal from "sweetalert2";

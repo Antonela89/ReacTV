@@ -209,9 +209,7 @@ const CardDetalle = ({ movie, trailer }) => {
 
 		return (
 			<article className="card-movie" ref={cardRef}>
-				<div
-					className={`main-card-layout ${!tieneImagen ? 'full-width-layout' : ''}`}
-				>
+				<div className='main-card-layout'>
 					{/* Renderizado condicional de la imagen */}
 					{path ? (
 						<div className="image-side">

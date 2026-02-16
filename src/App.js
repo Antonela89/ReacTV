@@ -96,6 +96,10 @@ function App() {
 										element={<Generos />}
 									/>
 									<Route
+										path="/lanzamientos"
+										element={<Lanzamientos />}
+									/>
+									<Route
 										path="/milista"
 										element={<MiLista />}
 									/>

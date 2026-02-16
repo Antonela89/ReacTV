@@ -209,7 +209,7 @@ const CardDetalle = ({ movie, trailer }) => {
 
 		return (
 			<article className="card-movie" ref={cardRef}>
-				<div className='main-card-layout'>
+				<div className="main-card-layout">
 					{/* Renderizado condicional de la imagen */}
 					{path ? (
 						<div className="image-side">
@@ -251,34 +251,30 @@ const CardDetalle = ({ movie, trailer }) => {
 							<h5 className="titulo">
 								{info.original_title || info.original_name}
 							</h5>
-							<div className="scrollable-info">
-								<div className="info-movie">
-									<ChangeLanguage
-										lenguaje={info.original_language}
-									/>
-									{/* <p className="duracion">{info.duracion}</p> */}
-									<GenerosListado generos={info.genres} />
-									<Anio />
-									{info.number_of_seasons ? (
-										<p className="temporadas">
-											{info.number_of_seasons} Temporadas:{' '}
-											{info.number_of_episodes ? (
-												<span className="capitulos">
-													{info.number_of_episodes}{' '}
-													capítulos:
-												</span>
-											) : null}
-										</p>
-									) : null}
-								</div>
-								<div className="descripcion">
-									<p className="descripcion-titulo">
-										Sinopsis:
+							<div className="info-movie">
+								<ChangeLanguage
+									lenguaje={info.original_language}
+								/>
+								{/* <p className="duracion">{info.duracion}</p> */}
+								<GenerosListado generos={info.genres} />
+								<Anio />
+								{info.number_of_seasons ? (
+									<p className="temporadas">
+										{info.number_of_seasons} Temporadas:{' '}
+										{info.number_of_episodes ? (
+											<span className="capitulos">
+												{info.number_of_episodes}{' '}
+												capítulos:
+											</span>
+										) : null}
 									</p>
-									<p className="descripcion-texto">
-										{info.overview}
-									</p>
-								</div>
+								) : null}
+							</div>
+							<div className="descripcion">
+								<p className="descripcion-titulo">Sinopsis:</p>
+								<p className="descripcion-texto">
+									{info.overview}
+								</p>
 							</div>
 						</div>
 					</div>

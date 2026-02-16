@@ -30,9 +30,6 @@ function App() {
 		showVideoFromLocalStorage !== 'false',
 	);
 
-	// estado ancho de ventana (renderizado responsive)
-	const [anchoVentana, setAnchoVentana] = useState(window.innerWidth);
-
 	// useEffect para capturar el ancho de la ventana y pasarlo al estado
 	useEffect(() => {
 		const handleResize = () => {
@@ -79,7 +76,7 @@ function App() {
 									<Route
 										path="/"
 										element={
-											<Home anchoVentana={anchoVentana} />
+											<Home />
 										}
 									/>
 									<Route path="/home" element={<Home />} />

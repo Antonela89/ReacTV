@@ -170,22 +170,24 @@ const CardDetalle = ({ movie, trailer }) => {
         return <p className="year">AÑO: {soloAnio}</p>;
     };
 
-    //componente Card
+    // componente Card
     const Card = () => {
+        const tieneImagen = info && info.backdrop_path;
+
         return (
         <article className="card-movie" ref={cardRef}>
-            <div className="img-container">
-                {/* <img
-                    className="img-pelicula"
-                    src={`https://reactvserver--reactvstream.repl.co/imagen-proxy?imageUrl=${IMAGE_PATH}${info.poster_path}`}
-                    alt={info.id}
-                /> */}
-                <img
-                    className="img-pelicula"
-                    src={`https://reactvserver--reactvstream.repl.co/imagen-proxy?imageUrl=${IMAGE_PATH}${info.backdrop_path}`}
-                    alt={info.id}
-                />
-                <div className="info-container">
+            <div className={`main-card-layout ${!tieneImagen ? 'full-width-layout' : ''}`}>
+                {/* Renderizado condicional de la imagen */}
+                    {tieneImagen && (
+                        <div className="image-side">
+                            <img
+                                className="img-pelicula"
+                                src={`https://reactvserver--reactvstream.repl.co/imagen-proxy?imageUrl=${IMAGE_PATH}${info.backdrop_path}`}
+                                alt={info.id}
+                            />
+                        </div>
+                    )}
+                <div className="info-side">
                     <div className="btn-container">
                         <Boton 
                             Contenido={PlaylistAddCircleIcon} 
@@ -206,8 +208,8 @@ const CardDetalle = ({ movie, trailer }) => {
                             funcion={downloadAsImage}/>
                     </div>
                     <div className="datos-container">
-                        <h5 className="titulo">{info.original_title}</h5>
-                        <div className='datos'>
+                        <h5 className="titulo">{info.original_title || info.original_name}</h5>
+                        <div className='scrollable-info'>
                             <div className="info-movie">
                                 <ChangeLanguage lenguaje={info.original_language} />
                                 {/* <p className="duracion">{info.duracion}</p> */}
@@ -226,7 +228,7 @@ const CardDetalle = ({ movie, trailer }) => {
                             </div>
                             <div className="descripcion">
                                 <p className='descripcion-titulo'>Sinopsis:</p>
-                                {info.overview}
+                                <p className='descripcion-texto'>{info.overview}</p>
                             </div>
                         </div>
                     </div>

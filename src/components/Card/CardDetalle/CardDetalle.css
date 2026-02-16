@@ -1,8 +1,10 @@
 .card-movie {
-  box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho total */
+  box-sizing: border-box;
+  /* Asegura que el padding y el borde no afecten el ancho total */
   display: flex;
   justify-content: center;
   width: 95vw;
+  max-height: 85vh;
   margin: 1rem;
   margin-top: 1.5rem;
   padding: 2rem;
@@ -12,31 +14,36 @@
   align-items: center;
   min-height: calc(100vh - 18rem);
   position: relative;
+  overflow: hidden;
 }
 
-.img-container {
-  width: 100vw; 
-  padding: 2rem;
-  background-color: var(--color-azul);
-  border: 0.4rem solid var(--color-naranja);
-  min-height: calc(100vh - 18rem);
-  position: relative;
-  border-radius: 2rem;
+.main-card-layout {
+    background-color: var(--color-azul);
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
 }
 
-.img-pelicula {
-  width: 100%;
-  min-height: calc(100vh - 18rem);
-  object-fit: contain;
-  border-radius: 1rem;
-  filter: brightness(0.6); /* sombreado a la imagen de fondo */
+.full-width-layout {
+    flex-direction: column;
 }
 
-.info-container {
-  width: 50%;
+.image-side {
+    flex: 0 0 40%; 
+    max-height: 100%;
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-side {
+  flex: 1;
   display: flex;
   justify-content: center;
-
   align-items: center;
   flex-direction: column;
   position: absolute;
@@ -44,6 +51,7 @@
   right: 0;
   padding: 2rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  overflow: hidden
 }
 
 .btn-container {
@@ -70,13 +78,18 @@
   font-weight: bold;
 }
 
-.datos {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+.scrollable-info {
+    overflow-y: auto; /* Activa el scroll vertical */
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.scrollable-info::-webkit-scrollbar {
+    width: 8px;
+}
+.scrollable-info::-webkit-scrollbar-thumb {
+    background: #ff8c00;
+    border-radius: 10px;
 }
 
 .info-movie {
@@ -87,7 +100,9 @@
   align-items: center;
 }
 
-.info-movie p, .info-movie p span, .descripcion {
+.info-movie p,
+.info-movie p span,
+.descripcion {
   font-size: 2rem;
 }
 
@@ -98,7 +113,8 @@
   justify-content: center;
 }
 
-.titulo-generos, .descripcion-titulo {
+.titulo-generos,
+.descripcion-titulo {
   margin: 0;
   font-size: 2rem;
   text-transform: uppercase;
@@ -107,30 +123,40 @@
 .generos {
   color: var(--color-blanco);
   font-size: 2rem;
-  padding:  0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .descripcion {
   width: 100%;
   padding: 0 2rem;
+  overflow-y: auto;
 }
-/* pantallas chicas*/
-/* ... tu código anterior ... */
+
+.descripcion-texto {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
 
 /* pantallas chicas */
 @media only screen and (max-width: 768px) {
   .card-movie {
     flex-direction: column;
-    align-items: center; /* Alinea la card al centro */
-    margin-right: 0; /* Evita el margen derecho innecesario */
+    align-items: center;
+    /* Alinea la card al centro */
+    margin-right: 0;
+    /* Evita el margen derecho innecesario */
   }
 
   .img-container {
     width: 90%;
     min-height: auto;
-    margin-top: 20px; /* Ajusta el margen superior */
-    margin-bottom: 20px; /* Ajusta el margen inferior */
-    padding: 0; /* Elimina el padding para ocupar el ancho completo */
+    margin-top: 20px;
+    /* Ajusta el margen superior */
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior */
+    padding: 0;
+    /* Elimina el padding para ocupar el ancho completo */
   }
 
   .info-container {
@@ -141,9 +167,11 @@
   }
 
   .btn-container {
-    width: 100%; /* Ajusta el ancho al 100% */
+    width: 100%;
+    /* Ajusta el ancho al 100% */
     display: flex;
-    justify-content: space-around; /* Espaciado uniforme entre los botones */
+    justify-content: space-around;
+    /* Espaciado uniforme entre los botones */
   }
 
   .datos {
@@ -156,21 +184,26 @@
   }
 
   .listado-generos {
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
-    justify-content: center; /* Centra los elementos en el contenedor */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    justify-content: center;
+    /* Centra los elementos en el contenedor */
   }
 
   .generos {
-    margin: 0.5rem; /* Agrega espacio entre los elementos de género */
+    margin: 0.5rem;
+    /* Agrega espacio entre los elementos de género */
   }
 
   .descripcion {
     width: 100%;
-    padding: 0.5rem; /* Ajusta el relleno de la descripción */
+    padding: 0.5rem;
+    /* Ajusta el relleno de la descripción */
   }
-  
+
   .titulo {
-    font-size: 2rem; /* Ajusta el tamaño del título en pantallas pequeñas */
+    font-size: 2rem;
+    /* Ajusta el tamaño del título en pantallas pequeñas */
   }
-  
+
 }

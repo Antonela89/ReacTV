@@ -30,22 +30,6 @@ function App() {
 		showVideoFromLocalStorage !== 'false',
 	);
 
-	// useEffect para capturar el ancho de la ventana y pasarlo al estado
-	useEffect(() => {
-		const handleResize = () => {
-			setAnchoVentana(window.innerWidth);
-		};
-
-		// Agregar event listener para el evento resize
-		window.addEventListener('resize', handleResize);
-
-		// Limpiar el event listener cuando el componente se desmonta
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []); // El array vacío asegura que el efecto se ejecute solo una vez al montar el componente
-
 	// función manejo de video
 	const handleVideoEnd = () => {
 		console.log('Video ended');
